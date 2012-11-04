@@ -1,0 +1,4 @@
+fortune
+=======
+
+fortunetelling Game
