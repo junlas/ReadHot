@@ -1,4 +1,4 @@
 fortune
 =======
 
-fortunetelling Game
+fortunetelling Game ¡£
