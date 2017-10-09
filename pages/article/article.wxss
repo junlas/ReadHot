@@ -1,0 +1,11 @@
+/*article*/
+.article {
+    padding: 40rpx;
+    margin-bottom: 20rpx;
+    background: #FFF;
+}
+.article .title {
+    padding-bottom: 40rpx;
+    font-size: 40rpx;
+    font-weight: bold
+}

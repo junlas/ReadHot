@@ -1,0 +1,19 @@
+<!--index.wxml
+1.增加打赏；
+2.增加联系我；
+3.增加小程序置顶；
+-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button style="margin:20px 0" open-type="share" bindtap="bindZhuanFa">转发</button>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto1">{{motto1}}</text>
+    <text class="user-motto2">{{motto2}}</text>
+  </view>
+</view>

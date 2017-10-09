@@ -1,0 +1,14 @@
+<view style="text-align:left;color:grey;font-size:15px;">{{updatetime}}</view>
+<view style="text-align:left;color:grey;font-size:15px;border-bottom: 1px solid #DEDEDE;">来源:{{site}}</view>
+
+<view class="content" style="padding-bottom: 150rpx;padding: 40rpx; margin-bottom: 20rpx; background: #FFF;">
+  <block wx:for="{{contentArr}}" wx:key="index" wx:for-item="it">
+    <block wx:if="{{it.length > 0}}">
+      <text>{{it}}</text>
+    </block>
+  </block>
+</view>
+
+<loading hidden="{{loadingHide}}">
+  加载中...
+</loading>

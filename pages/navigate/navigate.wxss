@@ -1,0 +1,10 @@
+.content text {
+    display: block;
+    font-size: 35rpx;
+    color: #6A6A6A;
+    line-height: 60rpx;
+    margin-bottom: 40rpx;
+    text-align: justify;
+    overflow: hidden;
+    word-wrap:  break-word; 
+}

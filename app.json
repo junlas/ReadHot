@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/joke/joke",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/navigate/navigate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "全球互联网动态",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/splash/splash",
+        "text": "热门话题"
+      },
+      {
+        "pagePath": "pages/joke/joke",
+        "text": "科技资讯"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ],
+    "position": "top"
+  },
+  "netWorkTimeout": {
+    "request": 10000
+  },
+  "debug": true
+}

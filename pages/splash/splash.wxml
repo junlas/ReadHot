@@ -1,0 +1,34 @@
+<view class="page-body">
+
+  <view class="loading-header-view" hidden="{{hideHeader}}">
+      <image src="../../images/loading.gif" style="height:26px;width:26px"/>
+      <text style="font-size:20px">正在加载</text>
+  </view>
+
+  <block wx:for="{{jokeList}}" wx:for-item="listItem" wx:key="id">
+    <view class="item-view {{listItem.click_box}}"  bindtap="clickTapItem" data-index="{{index}}" data-item="{{listItem}}">
+      <text class="title {{listItem.click_title}}">{{listItem.title}}</text>
+      <text class="date">{{listItem.diffDate}}</text>
+      <text class="content {{listItem.click_content}}">{{listItem.content}}</text>
+      <view class="links {{listItem.click_links}}">
+
+        <block wx:for="{{listItem.linksArr}}">
+          <view style="padding:10px 0;" bindtap="clickToNavigator" data-url="navi_id={{item[0]}}&title={{item[1]}}&updatetime={{listItem.updatetime}}&site={{item[2]}}">
+            <navigator hover-stop-propagation="true" hover-class="navigator-hover" style="display:flex;flex-direction:row;"><image style="width:16px;height:16px;margin:5px 0;" src="../../images/plus.png"/><view style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:300px;">{{item[1]}}</view></navigator>
+            <view style="color:grey;font-size:13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:300px;">{{item[2]}}</view><!--({{item[3]}})-->
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+
+  <view class="loading-footer-view" hidden="{{hideFooter}}">
+      <image src="../../images/loading.gif" style="height:26px;width:26px"/>
+      <text style="font-size:20px">正在加载</text>
+  </view>
+
+  <loading hidden="{{loadingHide}}">
+    加载中...
+  </loading>
+
+</view>

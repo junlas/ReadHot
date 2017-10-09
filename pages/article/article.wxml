@@ -1,0 +1,23 @@
+<view class="article">
+        <view class="title">
+            <text>知天下，为什么美国数学很简，做的东西却比我们好？</text>
+        </view>
+        <view class="author-info">
+            <image class="avatar" src="../../images/news.jpg"></image>
+            <text class="author-name">Dave Cheng</text>
+            <text class="author-mark">，矮油</text>
+        </view>
+        <view class="content">
+            <text>还有一些可能会毁了你“三观”的内容——很多南沙小国其实不怕中国，他们占着绝大多数南沙岛屿;中国的出生率确实在下降，可是和计划生育无关;白宫的政治也是利益为先，所以根本不会搭理外国人的网络请愿……
+            </text>
+            <text class="qoute">矛盾是无力去暂停
+                可会知 我心里困倦满腔
+                夜阑静 问有谁共鸣
+            </text>
+            <text>美国的小学生用不用「阅读并背诵全文」？意大利黑手党一年能赚多少钱?怎么玩转日本红灯区？扎根世界各地的朋友带你第一视角看天下，这不是采访，这是他们的生活;这一刹那世界和他们的故事，仿佛都在你的掌中。
+            </text>
+        </view>
+        <view  class="discuss">
+            <navigator url="http://baidu.com">查看知乎讨论</navigator>
+        </view>
+    </view>

@@ -1,0 +1,22 @@
+<import src="../template/jokeMain.wxml" />
+
+<view class="page-body">
+  <view class="loading-header-view" hidden="{{hideHeader}}">
+      <image src="../../images/loading.gif" style="height:26px;width:26px"/>
+      <text style="font-size:20px">正在加载</text>
+  </view>
+
+  <block wx:for="{{jokeList}}">
+    <view class="item-view" bindtap="tapItemClick" data-index="{{index}}" data-item="{{item}}">
+      <view class="title">{{item.title}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="date">{{item.diffDate}}</view>
+    </view>
+  </block>
+
+  <template is="loadindFooter" data="{{hideFooter}}" />
+</view>
+
+<loading hidden="{{loadingHide}}">
+    加载中...
+</loading>

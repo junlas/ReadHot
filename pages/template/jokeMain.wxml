@@ -1,0 +1,7 @@
+<!--加载更多页脚-->
+<template name="loadindFooter">
+    <view class="loading-footer-view" hidden="{{hideFooter}}">
+        <image src="../../images/loading.gif" style="height:26px;width:26px"/>
+        <text style="font-size:20px">正在加载</text>
+    </view>
+</template>

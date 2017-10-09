@@ -1,0 +1,39 @@
+page {
+    background: #FAFAFA;/*#DDD;*/
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200rpx 0;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+}
+
+.usermotto{
+  display: flex;
+  flex-direction: column;
+  color: #aaa;
+  justify-content: center;
+  align-items: center;
+}
+
+.usermotto .user-motto1 {
+  bottom: 40px;
+  position:fixed;
+}
+
+.usermotto .user-motto2 {
+  position: fixed;
+  bottom: 10px;
+}
